@@ -6,9 +6,9 @@
 	"library": "false",
 	"manifestPlusVersion": "1.2.0",
 	"compatibility": {
-		"minimum": 10,
-		"verified": 10,
-		"maximum": 11
+		"minimum": 13,
+		"verified": 13,
+		"maximum": 13
 	},
 	"authors": [
 		{
@@ -157,13 +157,6 @@
 	"esmodules": ["scripts/module.js"],
 	"scripts": ["scripts/lib/lib.js"],
 	"styles": ["styles/module.css"],
-	"languages": [
-		{
-			"lang": "en",
-			"name": "English",
-			"path": "languages/en.json"
-		}
-	],
 	"url": "#{URL}#",
 	"manifest": "#{MANIFEST}#",
 	"download": "#{DOWNLOAD}#",
