@@ -1,51 +1,178 @@
 {
-  "id": "module",
-  "title": "New Module",
-  "description": "",
-  "version": "#{VERSION}#",
-  "library": "false",
-  "manifestPlusVersion": "1.2.0",
-  "compatibility": {
-    "minimum": 10,
-    "verified": 10,
-    "maximum": 11
-  },
-  "authors": [
-    {
-      "name": "The League of Extraordinary FVTT Developers",
-      "url": "https://github.com/League-of-Foundry-Developers",
-      "discord": "discordID#0001"
-    }
-  ],
-  "relationships": {
-    "systems": [],
-    "requires": []
-  },
-  "esmodules": [
-    "scripts/module.js"
-  ],
-  "scripts": [
-    "scripts/lib/lib.js"
-  ],
-  "styles": [
-    "styles/module.css"
-  ],
-  "languages": [
-    {
-      "lang": "en",
-      "name": "English",
-      "path": "languages/en.json"
-    }
-  ],
-  "url": "#{URL}#",
-  "manifest": "#{MANIFEST}#",
-  "download": "#{DOWNLOAD}#",
-  "license": "LICENSE",
-  "readme": "README.md",
-  "media": [
-    {
-      "type": "icon",
-      "url": "https://avatars2.githubusercontent.com/u/71292812?s=400&u=ccdb4eeb7abf551ca8f314e5a9bfd0479a4d3d41&v=4"
-    }
-  ]
+	"id": "module",
+	"title": "New Module",
+	"description": "Dummy dependency aggregator module.",
+	"version": "#{VERSION}#",
+	"library": "false",
+	"manifestPlusVersion": "1.2.0",
+	"compatibility": {
+		"minimum": 10,
+		"verified": 10,
+		"maximum": 11
+	},
+	"authors": [
+		{
+			"name": "The League of Extraordinary FVTT Developers",
+			"url": "https://github.com/League-of-Foundry-Developers",
+			"discord": "discordID#0001"
+		}
+	],
+	"relationships": {
+		"systems": [],
+		"requires": [
+			{ "id": "ATL" },
+			{ "id": "ActiveAuras" },
+			{ "id": "CautiousGamemastersPack" },
+			{ "id": "Rideable" },
+			{ "id": "_chatcommands" },
+			{ "id": "adventuremusic" },
+			{ "id": "alien-dice" },
+			{ "id": "animated-spell-effects-cartoon" },
+			{ "id": "arka_stream_dice" },
+			{ "id": "autoanimations" },
+			{ "id": "betterroofs" },
+			{ "id": "breaktime" },
+			{ "id": "caydens-dice" },
+			{ "id": "chat-images" },
+			{ "id": "chris-premades" },
+			{ "id": "class-pages" },
+			{ "id": "colorsettings" },
+			{ "id": "combat-tracker-dock" },
+			{ "id": "combatbooster" },
+			{ "id": "cosmic-dice" },
+			{ "id": "dae" },
+			{ "id": "damage-numbers" },
+			{ "id": "dd-import-modified" },
+			{ "id": "dfreds-droppables" },
+			{ "id": "dice-so-nice" },
+			{ "id": "dice-so-nice-more-sfx-triggers" },
+			{ "id": "diceaddiction" },
+			{ "id": "dnd5e-animations" },
+			{ "id": "dnd5e-scriptlets" },
+			{ "id": "dnd5e-system-customizer" },
+			{ "id": "effectmacro" },
+			{ "id": "elevationruler" },
+			{ "id": "entice-with-dice-so-nice" },
+			{ "id": "fa-dsn-skin" },
+			{ "id": "filepicker-plus" },
+			{ "id": "find-the-culprit" },
+			{ "id": "forge-vtt-shared-compendiums-shared-compendiums" },
+			{ "id": "forge-vtt-shared-compendiums-xeno-stuff" },
+			{ "id": "foundry-taskbar" },
+			{ "id": "foundry_community_tables" },
+			{ "id": "foundryvtt-simple-calendar" },
+			{ "id": "fvtt-bcdice-addon" },
+			{ "id": "fvtt-perf-optim" },
+			{ "id": "fxmaster" },
+			{ "id": "gambits-premades" },
+			{ "id": "gambitsTemplatePreviewer" },
+			{ "id": "gm-notes" },
+			{ "id": "go-to-player" },
+			{ "id": "healthEstimate" },
+			{ "id": "hero-mancer" },
+			{ "id": "hide-gm-rolls" },
+			{ "id": "hover-distance" },
+			{ "id": "hurry-up" },
+			{ "id": "initiative-double-click" },
+			{ "id": "item-delete-check" },
+			{ "id": "item-piles" },
+			{ "id": "ivan-duch-music-packs" },
+			{ "id": "jb2a_patreon" },
+			{ "id": "levels" },
+			{ "id": "lib-wrapper" },
+			{ "id": "lmrtfy" },
+			{ "id": "lordudice" },
+			{ "id": "michaelghelfi" },
+			{ "id": "midi-item-showcase-community" },
+			{ "id": "midi-qol" },
+			{ "id": "mmm" },
+			{ "id": "mob-attack-tool" },
+			{ "id": "module-credits" },
+			{ "id": "monks-active-tiles" },
+			{ "id": "monks-combat-details" },
+			{ "id": "monks-enhanced-journal" },
+			{ "id": "monks-little-details" },
+			{ "id": "monks-scene-navigation" },
+			{ "id": "monks-sound-enhancements" },
+			{ "id": "monks-tokenbar" },
+			{ "id": "monks-wall-enhancement" },
+			{ "id": "moulinette-core" },
+			{ "id": "moulinette-tiles" },
+			{ "id": "multi-token-edit" },
+			{ "id": "my-shared-compendia" },
+			{ "id": "neutro-dice-theme-bitd" },
+			{ "id": "nice-more-dice" },
+			{ "id": "party-overview" },
+			{ "id": "perceptive" },
+			{ "id": "pf2e-karmic-dice" },
+			{ "id": "pings" },
+			{ "id": "playerListStatus" },
+			{ "id": "playerStatus" },
+			{ "id": "playlist_import" },
+			{ "id": "polyglot" },
+			{ "id": "popout" },
+			{ "id": "portal-lib" },
+			{ "id": "psfx" },
+			{ "id": "psfx-patreon" },
+			{ "id": "quick-insert" },
+			{ "id": "quick-module-enable" },
+			{ "id": "quickdraw" },
+			{ "id": "recycle-bin" },
+			{ "id": "region-attacher" },
+			{ "id": "routinglib" },
+			{ "id": "scene-packer" },
+			{ "id": "sequencer" },
+			{ "id": "settings-extender" },
+			{ "id": "simple-quest" },
+			{ "id": "smalltime" },
+			{ "id": "smarttarget" },
+			{ "id": "socketlib" },
+			{ "id": "soundfxlibrary" },
+			{ "id": "tabletop-rpg-music" },
+			{ "id": "talisdice" },
+			{ "id": "theripper-premium-hub" },
+			{ "id": "tidy5e-sheet" },
+			{ "id": "tile-scroll" },
+			{ "id": "times-up" },
+			{ "id": "token-action-hud-core" },
+			{ "id": "token-action-hud-dnd5e" },
+			{ "id": "token-hud-wildcard" },
+			{ "id": "token-variants" },
+			{ "id": "tokenflip" },
+			{ "id": "tokenmagic" },
+			{ "id": "torch" },
+			{ "id": "trs-foundryvtt-dice-set" },
+			{ "id": "vauxs-archives" },
+			{ "id": "visual-active-effects" },
+			{ "id": "vtta-tokenizer" },
+			{ "id": "wall-height" },
+			{ "id": "wcube" },
+			{ "id": "what-the-flag" },
+			{ "id": "wikirole_dice" },
+			{ "id": "world-macros" },
+			{ "id": "world-setting-sync" },
+			{ "id": "forge-vtt" }
+		]
+	},
+	"esmodules": ["scripts/module.js"],
+	"scripts": ["scripts/lib/lib.js"],
+	"styles": ["styles/module.css"],
+	"languages": [
+		{
+			"lang": "en",
+			"name": "English",
+			"path": "languages/en.json"
+		}
+	],
+	"url": "#{URL}#",
+	"manifest": "#{MANIFEST}#",
+	"download": "#{DOWNLOAD}#",
+	"license": "LICENSE",
+	"readme": "README.md",
+	"media": [
+		{
+			"type": "icon",
+			"url": "https://avatars2.githubusercontent.com/u/71292812?s=400&u=ccdb4eeb7abf551ca8f314e5a9bfd0479a4d3d41&v=4"
+		}
+	]
 }
