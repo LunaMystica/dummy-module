@@ -1,169 +1,815 @@
 {
-  "id": "dummy-module",
-  "title": "New Module",
-  "description": "Dummy dependency aggregator module.",
-  "version": "#{VERSION}#",
-  "library": false,
-  "manifestPlusVersion": "1.2.0",
+  "id": "xeno-module-pack",
+  "title": "Xeno Module Pack",
+  "description": "Dummy module for bulk dependency installation.",
+  "version": "1.0.0",
   "compatibility": {
-    "minimum": 12,
-    "verified": 13,
-    "maximum": 13
+    "minimum": "12",
+    "verified": "12"
   },
   "authors": [
     {
-      "name": "The League of Extraordinary FVTT Developers",
-      "url": "https://github.com/League-of-Foundry-Developers",
-      "discord": "discordID#0001"
+      "name": "Luna"
     }
   ],
   "relationships": {
-    "systems": [],
     "requires": [
-      { "id": "ATL" },
-      { "id": "ActiveAuras" },
-      { "id": "CautiousGamemastersPack" },
-      { "id": "Rideable" },
-      { "id": "_chatcommands" },
-      { "id": "adventuremusic" },
-      { "id": "animated-spell-effects-cartoon" },
-      { "id": "auraeffects" },
-      { "id": "autoanimations" },
-      { "id": "bbmm" },
-      { "id": "betterroofs" },
-      { "id": "breaktime" },
-      { "id": "calendaria" },
-      { "id": "caydens-dice" },
-      { "id": "chris-premades" },
-      { "id": "combat-tracker-dock" },
-      { "id": "combatbooster" },
-      { "id": "cosmic-dice" },
-      { "id": "dae" },
-      { "id": "damage-numbers" },
-      { "id": "dd-import" },
-      { "id": "ddb-importer" },
-      { "id": "dice-so-nice" },
-      { "id": "dice-so-nice-more-sfx-triggers" },
-      { "id": "dnd5e-animations" },
-      { "id": "dnd5e-scriptlets" },
-      { "id": "dnd5e-system-customizer" },
-      { "id": "dynamic-soundscapes" },
-      { "id": "effectmacro" },
-      { "id": "entice-with-dice-so-nice" },
-      { "id": "fa-dsn-skin" },
-      { "id": "find-the-culprit" },
-      { "id": "forge-vtt-shared-compendiums-shared-compendiums" },
-      { "id": "forge-vtt-shared-compendiums-xeno-stuff" },
-      { "id": "foundry-taskbar" },
-      { "id": "foundry_community_macros" },
-      { "id": "foundry_community_tables" },
-      { "id": "fuzzy-foundry" },
-      { "id": "fvtt-perf-optim" },
-      { "id": "fxmaster" },
-      { "id": "gambits-premades" },
-      { "id": "gambitsTemplatePreviewer" },
-      { "id": "gm-notes" },
-      { "id": "healthEstimate" },
-      { "id": "hero-mancer" },
-      { "id": "hover-distance" },
-      { "id": "hurry-up" },
-      { "id": "item-delete-check" },
-      { "id": "item-piles" },
-      { "id": "itempilesdnd5e" },
-      { "id": "ivan-duch-music-packs" },
-      { "id": "jb2a_patreon" },
-      { "id": "levels" },
-      { "id": "levelsautocover" },
-      { "id": "lib-wrapper" },
-      { "id": "lordudice" },
-      { "id": "michaelghelfi" },
-      { "id": "midi-item-showcase-community" },
-      { "id": "midi-qol" },
-      { "id": "mmm" },
-      { "id": "mob-attack-tool" },
-      { "id": "monks-active-tiles" },
-      { "id": "monks-combat-details" },
-      { "id": "monks-enhanced-journal" },
-      { "id": "monks-little-details" },
-      { "id": "monks-scene-navigation" },
-      { "id": "monks-sound-enhancements" },
-      { "id": "monks-tokenbar" },
-      { "id": "monks-wall-enhancement" },
-      { "id": "moulinette" },
-      { "id": "multi-token-edit" },
-      { "id": "my-shared-compendia" },
-      { "id": "neutro-dice-theme-bitd" },
-      { "id": "partyview" },
-      { "id": "perceptive" },
-      { "id": "permission_viewer" },
-      { "id": "polyglot" },
-      { "id": "portal-lib" },
-      { "id": "psfx" },
-      { "id": "puzzle-locks" },
-      { "id": "quick-insert" },
-      { "id": "quickdraw" },
-      { "id": "recycle-bin" },
-      { "id": "region-attacher" },
-      { "id": "rest-recovery" },
-      { "id": "routinglib" },
-      { "id": "scene-defaults" },
-      { "id": "sequencer" },
-      { "id": "simple-quest" },
-      { "id": "smarttarget" },
-      { "id": "socketlib" },
-      { "id": "soundfxlibrary" },
-      { "id": "spell-book" },
-      { "id": "tabletop-rpg-music" },
-      { "id": "tagger" },
-      { "id": "theripper-premium-hub" },
-      { "id": "tidbits" },
-      { "id": "tidy5e-sheet" },
-      { "id": "times-up" },
-      { "id": "token-action-hud-core" },
-      { "id": "token-action-hud-dnd5e" },
-      { "id": "token-attacher" },
-      { "id": "token-hud-wildcard" },
-      { "id": "token-variants" },
-      { "id": "tokenflip" },
-      { "id": "tokenmagic" },
-      { "id": "trs-foundryvtt-dice-set" },
-      { "id": "vauxs-archives" },
-      { "id": "visual-active-effects" },
-      { "id": "vtta-tokenizer" },
-      { "id": "wall-height" },
-      { "id": "wcube" },
-      { "id": "what-the-flag" },
-      { "id": "wikirole_dice" },
-      { "id": "wild-magic-surge-5e" },
-      { "id": "forge-vtt" },
-      { "id": "forge-vtt-optional" }
+      {
+        "id": "5e-spellblock-importer",
+        "type": "module"
+      },
+      {
+        "id": "ATL",
+        "type": "module"
+      },
+      {
+        "id": "ActiveAuras",
+        "type": "module"
+      },
+      {
+        "id": "CautiousGamemastersPack",
+        "type": "module"
+      },
+      {
+        "id": "LockView",
+        "type": "module"
+      },
+      {
+        "id": "Rideable",
+        "type": "module"
+      },
+      {
+        "id": "_chatcommands",
+        "type": "module"
+      },
+      {
+        "id": "about-face",
+        "type": "module"
+      },
+      {
+        "id": "acelib",
+        "type": "module"
+      },
+      {
+        "id": "actor-attribute-list",
+        "type": "module"
+      },
+      {
+        "id": "adventuremusic",
+        "type": "module"
+      },
+      {
+        "id": "animated-spell-effects-cartoon",
+        "type": "module"
+      },
+      {
+        "id": "arka_stream_dice",
+        "type": "module"
+      },
+      {
+        "id": "auraeffects",
+        "type": "module"
+      },
+      {
+        "id": "autoanimations",
+        "type": "module"
+      },
+      {
+        "id": "bbmm",
+        "type": "module"
+      },
+      {
+        "id": "betterroofs",
+        "type": "module"
+      },
+      {
+        "id": "bg3-hud-core",
+        "type": "module"
+      },
+      {
+        "id": "bg3-hud-dnd5e",
+        "type": "module"
+      },
+      {
+        "id": "breaktime",
+        "type": "module"
+      },
+      {
+        "id": "bulk-tasks",
+        "type": "module"
+      },
+      {
+        "id": "calendaria",
+        "type": "module"
+      },
+      {
+        "id": "caydens-dice",
+        "type": "module"
+      },
+      {
+        "id": "chat-images",
+        "type": "module"
+      },
+      {
+        "id": "chris-premades",
+        "type": "module"
+      },
+      {
+        "id": "colorsettings",
+        "type": "module"
+      },
+      {
+        "id": "combat-tracker-dock",
+        "type": "module"
+      },
+      {
+        "id": "combatbooster",
+        "type": "module"
+      },
+      {
+        "id": "compact-scene-navigation",
+        "type": "module"
+      },
+      {
+        "id": "cosmic-dice",
+        "type": "module"
+      },
+      {
+        "id": "crlngn-ui",
+        "type": "module"
+      },
+      {
+        "id": "cursor-hider",
+        "type": "module"
+      },
+      {
+        "id": "dae",
+        "type": "module"
+      },
+      {
+        "id": "damage-log",
+        "type": "module"
+      },
+      {
+        "id": "damage-numbers",
+        "type": "module"
+      },
+      {
+        "id": "dd-import",
+        "type": "module"
+      },
+      {
+        "id": "dd-import-modified",
+        "type": "module"
+      },
+      {
+        "id": "ddb-importer",
+        "type": "module"
+      },
+      {
+        "id": "dfreds-convenient-effects",
+        "type": "module"
+      },
+      {
+        "id": "dfreds-droppables",
+        "type": "module"
+      },
+      {
+        "id": "dice-calculator",
+        "type": "module"
+      },
+      {
+        "id": "dice-so-nice",
+        "type": "module"
+      },
+      {
+        "id": "dice-so-nice-more-sfx-triggers",
+        "type": "module"
+      },
+      {
+        "id": "diceaddiction",
+        "type": "module"
+      },
+      {
+        "id": "dnd5e-animations",
+        "type": "module"
+      },
+      {
+        "id": "dnd5e-currency-advancement",
+        "type": "module"
+      },
+      {
+        "id": "dnd5e-damage-analyst",
+        "type": "module"
+      },
+      {
+        "id": "dnd5e-scriptlets",
+        "type": "module"
+      },
+      {
+        "id": "dnd5e-system-customizer",
+        "type": "module"
+      },
+      {
+        "id": "dramatic-rolls",
+        "type": "module"
+      },
+      {
+        "id": "dynamic-soundscapes",
+        "type": "module"
+      },
+      {
+        "id": "effectmacro",
+        "type": "module"
+      },
+      {
+        "id": "elevationruler",
+        "type": "module"
+      },
+      {
+        "id": "entice-with-dice-so-nice",
+        "type": "module"
+      },
+      {
+        "id": "fa-dsn-skin",
+        "type": "module"
+      },
+      {
+        "id": "filepicker-plus",
+        "type": "module"
+      },
+      {
+        "id": "find-the-culprit",
+        "type": "module"
+      },
+      {
+        "id": "follow-me-if-you-can",
+        "type": "module"
+      },
+      {
+        "id": "forge-vtt-shared-compendiums-shared-compendium-soulstrikes",
+        "type": "module"
+      },
+      {
+        "id": "forge-vtt-shared-compendiums-shared-compendiums",
+        "type": "module"
+      },
+      {
+        "id": "forge-vtt-shared-compendiums-xeno-stuff",
+        "type": "module"
+      },
+      {
+        "id": "forien-copy-environment",
+        "type": "module"
+      },
+      {
+        "id": "forien-quest-log",
+        "type": "module"
+      },
+      {
+        "id": "forien-ui-tweaks",
+        "type": "module"
+      },
+      {
+        "id": "foundry-taskbar",
+        "type": "module"
+      },
+      {
+        "id": "foundry-vtt-content-parser",
+        "type": "module"
+      },
+      {
+        "id": "foundry_community_macros",
+        "type": "module"
+      },
+      {
+        "id": "foundry_community_tables",
+        "type": "module"
+      },
+      {
+        "id": "foundryvtt-dnd5e-jump-calculator",
+        "type": "module"
+      },
+      {
+        "id": "foundryvtt-simple-calendar",
+        "type": "module"
+      },
+      {
+        "id": "foundryvtt-simple-calendar-reborn",
+        "type": "module"
+      },
+      {
+        "id": "fuzzy-foundry",
+        "type": "module"
+      },
+      {
+        "id": "fvtt-bcdice-addon",
+        "type": "module"
+      },
+      {
+        "id": "fvtt-perf-optim",
+        "type": "module"
+      },
+      {
+        "id": "fxmaster",
+        "type": "module"
+      },
+      {
+        "id": "gambits-premades",
+        "type": "module"
+      },
+      {
+        "id": "gambitsTemplatePreviewer",
+        "type": "module"
+      },
+      {
+        "id": "gm-notes",
+        "type": "module"
+      },
+      {
+        "id": "gm-screen",
+        "type": "module"
+      },
+      {
+        "id": "healthEstimate",
+        "type": "module"
+      },
+      {
+        "id": "heartbeat",
+        "type": "module"
+      },
+      {
+        "id": "hero-mancer",
+        "type": "module"
+      },
+      {
+        "id": "hover-distance",
+        "type": "module"
+      },
+      {
+        "id": "hurry-up",
+        "type": "module"
+      },
+      {
+        "id": "improved-macro-editor",
+        "type": "module"
+      },
+      {
+        "id": "item-delete-check",
+        "type": "module"
+      },
+      {
+        "id": "item-piles",
+        "type": "module"
+      },
+      {
+        "id": "itempilesdnd5e",
+        "type": "module"
+      },
+      {
+        "id": "ivan-duch-music-packs",
+        "type": "module"
+      },
+      {
+        "id": "jb2a_patreon",
+        "type": "module"
+      },
+      {
+        "id": "karma",
+        "type": "module"
+      },
+      {
+        "id": "levels",
+        "type": "module"
+      },
+      {
+        "id": "levelsautocover",
+        "type": "module"
+      },
+      {
+        "id": "lib-dfreds-migrations",
+        "type": "module"
+      },
+      {
+        "id": "lib-dfreds-ui-extender",
+        "type": "module"
+      },
+      {
+        "id": "lib-wrapper",
+        "type": "module"
+      },
+      {
+        "id": "link-item-resource-5e",
+        "type": "module"
+      },
+      {
+        "id": "lmrtfy",
+        "type": "module"
+      },
+      {
+        "id": "lordudice",
+        "type": "module"
+      },
+      {
+        "id": "macro-wheel",
+        "type": "module"
+      },
+      {
+        "id": "mad-vampirehunters",
+        "type": "module"
+      },
+      {
+        "id": "magicitems",
+        "type": "module"
+      },
+      {
+        "id": "media-optimizer",
+        "type": "module"
+      },
+      {
+        "id": "michaelghelfi",
+        "type": "module"
+      },
+      {
+        "id": "midi-item-showcase-community",
+        "type": "module"
+      },
+      {
+        "id": "midi-qol",
+        "type": "module"
+      },
+      {
+        "id": "mmm",
+        "type": "module"
+      },
+      {
+        "id": "mob-attack-tool",
+        "type": "module"
+      },
+      {
+        "id": "module-credits",
+        "type": "module"
+      },
+      {
+        "id": "monks-active-tiles",
+        "type": "module"
+      },
+      {
+        "id": "monks-combat-details",
+        "type": "module"
+      },
+      {
+        "id": "monks-combat-marker",
+        "type": "module"
+      },
+      {
+        "id": "monks-enhanced-journal",
+        "type": "module"
+      },
+      {
+        "id": "monks-little-details",
+        "type": "module"
+      },
+      {
+        "id": "monks-scene-navigation",
+        "type": "module"
+      },
+      {
+        "id": "monks-sound-enhancements",
+        "type": "module"
+      },
+      {
+        "id": "monks-tokenbar",
+        "type": "module"
+      },
+      {
+        "id": "monks-wall-enhancement",
+        "type": "module"
+      },
+      {
+        "id": "more-activities",
+        "type": "module"
+      },
+      {
+        "id": "moulinette",
+        "type": "module"
+      },
+      {
+        "id": "moulinette-core",
+        "type": "module"
+      },
+      {
+        "id": "moulinette-tiles",
+        "type": "module"
+      },
+      {
+        "id": "multi-token-edit",
+        "type": "module"
+      },
+      {
+        "id": "my-shared-compendia",
+        "type": "module"
+      },
+      {
+        "id": "neutro-dice-theme-bitd",
+        "type": "module"
+      },
+      {
+        "id": "oronder",
+        "type": "module"
+      },
+      {
+        "id": "party-overview",
+        "type": "module"
+      },
+      {
+        "id": "partyview",
+        "type": "module"
+      },
+      {
+        "id": "perceptive",
+        "type": "module"
+      },
+      {
+        "id": "permission_viewer",
+        "type": "module"
+      },
+      {
+        "id": "pf2e-karmic-dice",
+        "type": "module"
+      },
+      {
+        "id": "pings",
+        "type": "module"
+      },
+      {
+        "id": "playerListStatus",
+        "type": "module"
+      },
+      {
+        "id": "playerStatus",
+        "type": "module"
+      },
+      {
+        "id": "playlist_import",
+        "type": "module"
+      },
+      {
+        "id": "polyglot",
+        "type": "module"
+      },
+      {
+        "id": "popout",
+        "type": "module"
+      },
+      {
+        "id": "portal-lib",
+        "type": "module"
+      },
+      {
+        "id": "psfx",
+        "type": "module"
+      },
+      {
+        "id": "psfx-patreon",
+        "type": "module"
+      },
+      {
+        "id": "puzzle-locks",
+        "type": "module"
+      },
+      {
+        "id": "quick-insert",
+        "type": "module"
+      },
+      {
+        "id": "quick-module-enable",
+        "type": "module"
+      },
+      {
+        "id": "quickdraw",
+        "type": "module"
+      },
+      {
+        "id": "recycle-bin",
+        "type": "module"
+      },
+      {
+        "id": "region-attacher",
+        "type": "module"
+      },
+      {
+        "id": "remote-highlight-ui",
+        "type": "module"
+      },
+      {
+        "id": "resourcesplus",
+        "type": "module"
+      },
+      {
+        "id": "rest-recovery",
+        "type": "module"
+      },
+      {
+        "id": "roll-tracker",
+        "type": "module"
+      },
+      {
+        "id": "routinglib",
+        "type": "module"
+      },
+      {
+        "id": "scene-defaults",
+        "type": "module"
+      },
+      {
+        "id": "scene-packer",
+        "type": "module"
+      },
+      {
+        "id": "sequencer",
+        "type": "module"
+      },
+      {
+        "id": "settings-extender",
+        "type": "module"
+      },
+      {
+        "id": "sidebar-macros",
+        "type": "module"
+      },
+      {
+        "id": "silence-compatibility-warnings",
+        "type": "module"
+      },
+      {
+        "id": "simple-quest",
+        "type": "module"
+      },
+      {
+        "id": "simple-weather",
+        "type": "module"
+      },
+      {
+        "id": "smalltime",
+        "type": "module"
+      },
+      {
+        "id": "smarttarget",
+        "type": "module"
+      },
+      {
+        "id": "so-inspired",
+        "type": "module"
+      },
+      {
+        "id": "socketlib",
+        "type": "module"
+      },
+      {
+        "id": "soundfxlibrary",
+        "type": "module"
+      },
+      {
+        "id": "spell-book",
+        "type": "module"
+      },
+      {
+        "id": "splatter",
+        "type": "module"
+      },
+      {
+        "id": "spotlight-omnisearch",
+        "type": "module"
+      },
+      {
+        "id": "swipe-vtt",
+        "type": "module"
+      },
+      {
+        "id": "tabletop-rpg-music",
+        "type": "module"
+      },
+      {
+        "id": "tagger",
+        "type": "module"
+      },
+      {
+        "id": "theripper-premium-hub",
+        "type": "module"
+      },
+      {
+        "id": "tidbits",
+        "type": "module"
+      },
+      {
+        "id": "tidy-ui_game-settings",
+        "type": "module"
+      },
+      {
+        "id": "tidy5e-sheet",
+        "type": "module"
+      },
+      {
+        "id": "tile-scroll",
+        "type": "module"
+      },
+      {
+        "id": "times-up",
+        "type": "module"
+      },
+      {
+        "id": "token-action-hud-core",
+        "type": "module"
+      },
+      {
+        "id": "token-action-hud-dnd5e",
+        "type": "module"
+      },
+      {
+        "id": "token-attacher",
+        "type": "module"
+      },
+      {
+        "id": "token-hud-wildcard",
+        "type": "module"
+      },
+      {
+        "id": "token-variants",
+        "type": "module"
+      },
+      {
+        "id": "tokenflip",
+        "type": "module"
+      },
+      {
+        "id": "tokenmagic",
+        "type": "module"
+      },
+      {
+        "id": "torch",
+        "type": "module"
+      },
+      {
+        "id": "trs-foundryvtt-dice-set",
+        "type": "module"
+      },
+      {
+        "id": "vauxs-archives",
+        "type": "module"
+      },
+      {
+        "id": "visual-active-effects",
+        "type": "module"
+      },
+      {
+        "id": "vtta-tokenizer",
+        "type": "module"
+      },
+      {
+        "id": "wall-height",
+        "type": "module"
+      },
+      {
+        "id": "walledtemplates",
+        "type": "module"
+      },
+      {
+        "id": "wcube",
+        "type": "module"
+      },
+      {
+        "id": "what-the-flag",
+        "type": "module"
+      },
+      {
+        "id": "wikirole_dice",
+        "type": "module"
+      },
+      {
+        "id": "wild-magic-surge-5e",
+        "type": "module"
+      },
+      {
+        "id": "world-setting-sync",
+        "type": "module"
+      },
+      {
+        "id": "xeno-homebrew-mechanics",
+        "type": "module"
+      },
+      {
+        "id": "z-scatter",
+        "type": "module"
+      },
+      {
+        "id": "forge-vtt",
+        "type": "module"
+      },
+      {
+        "id": "forge-vtt-optional",
+        "type": "module"
+      }
     ]
-  },
-  "esmodules": [
-    "scripts/module.js"
-  ],
-  "scripts": [
-    "scripts/lib/lib.js"
-  ],
-  "styles": [
-    "styles/module.css"
-  ],
-  "languages": [
-    {
-      "lang": "en",
-      "name": "English",
-      "path": "languages/en.json"
-    }
-  ],
-  "url": "#{URL}#",
-  "manifest": "#{MANIFEST}#",
-  "download": "#{DOWNLOAD}#",
-  "license": "LICENSE",
-  "readme": "README.md",
-  "media": [
-    {
-      "type": "icon",
-      "url": "https://avatars2.githubusercontent.com/u/71292812?s=400&u=ccdb4eeb7abf551ca8f314e5a9bfd0479a4d3d41&v=4"
-    }
-  ]
+  }
 }
