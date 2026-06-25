@@ -18,7 +18,7 @@
     }
   ],
   "relationships": {
-    "requires": [
+    "optional": [
       {
         "id": "5e-spellblock-importer",
         "type": "module"
