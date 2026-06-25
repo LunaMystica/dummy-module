@@ -1,15 +1,20 @@
 {
-  "id": "xeno-module-pack",
-  "title": "Xeno Module Pack",
-  "description": "Dummy module for bulk dependency installation.",
-  "version": "1.0.0",
+  "id": "dummy-module",
+  "title": "New Module",
+  "description": "Dummy dependency aggregator module.",
+  "version": "#{VERSION}#",
+  "library": false,
+  "manifestPlusVersion": "1.2.0",
   "compatibility": {
-    "minimum": "12",
-    "verified": "12"
+    "minimum": 12,
+    "verified": 13,
+    "maximum": 13
   },
   "authors": [
     {
-      "name": "Luna"
+      "name": "The League of Extraordinary FVTT Developers",
+      "url": "https://github.com/League-of-Foundry-Developers",
+      "discord": "discordID#0001"
     }
   ],
   "relationships": {
@@ -801,15 +806,33 @@
       {
         "id": "z-scatter",
         "type": "module"
-      },
-      {
-        "id": "forge-vtt",
-        "type": "module"
-      },
-      {
-        "id": "forge-vtt-optional",
-        "type": "module"
       }
     ]
-  }
+  },  "esmodules": [
+    "scripts/module.js"
+  ],
+  "scripts": [
+    "scripts/lib/lib.js"
+  ],
+  "styles": [
+    "styles/module.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json"
+    }
+  ],
+  "url": "#{URL}#",
+  "manifest": "#{MANIFEST}#",
+  "download": "#{DOWNLOAD}#",
+  "license": "LICENSE",
+  "readme": "README.md",
+  "media": [
+    {
+      "type": "icon",
+      "url": "https://avatars2.githubusercontent.com/u/71292812?s=400&u=ccdb4eeb7abf551ca8f314e5a9bfd0479a4d3d41&v=4"
+    }
+  ]
 }
