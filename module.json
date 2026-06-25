@@ -18,7 +18,7 @@
     }
   ],
   "relationships": {
-    "optional": [
+    "requires": [
       {
         "id": "5e-spellblock-importer",
         "type": "module"
@@ -417,10 +417,6 @@
       },
       {
         "id": "macro-wheel",
-        "type": "module"
-      },
-      {
-        "id": "mad-vampirehunters",
         "type": "module"
       },
       {
